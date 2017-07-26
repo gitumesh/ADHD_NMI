@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ArrayQuestionsBelow13SectionA</key>
+	<array>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often makes careless mistakes in school/ homework or is careless?</string>
+			<key>Section</key>
+			<string>Section A1a</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string>Does your child is often messy in day to day activities? </string>
+			<key>Section</key>
+			<string>Section A1a</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often have difficulty in concentrating while playing ?</string>
+			<key>Section</key>
+			<string>Section A1b</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string> Does your child often have difficulty in doing routine chores like doing homework, Brushing teeth, Bathing?</string>
+			<key>Section</key>
+			<string>Section A1b</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often have trouble in paying attention when somebody is talking to him/her?</string>
+			<key>Section</key>
+			<string>Section A1c</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often does not follow instructions despite understanding them and not due to disobedience which makes them unable to complete their  work in time?</string>
+			<key>Section</key>
+			<string>Section A1d</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often have difficulty getting ready for school?</string>
+			<key>Section</key>
+			<string>Section A1e</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string>Does your child often have difficulty putting toys back to their place on their own?</string>
+			<key>Section</key>
+			<string>Section A1e</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often avoid activities that require sustained mental efforts(e.g  homework/class work, looking at picture book, listening to story?</string>
+			<key>Section</key>
+			<string>Section A1f</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often loses things necessary for tasks (e.g. books, pencils, toys)?</string>
+			<key>Section</key>
+			<string>Section A1g</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often lose concentration due to little distractions like traffic, road vendors, animal sounds  and loses track of the work he/she is doing?</string>
+			<key>Section</key>
+			<string>Section A1h</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Is your child more forgetful in daily activities compared to other children of his/her age (e.g., bathing, dressing, brushing teeth)?</string>
+			<key>Section</key>
+			<string>Section A1i</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often appear restless (e.g. tapping finger, moving hands and feet)?</string>
+			<key>Section</key>
+			<string>Section A2a</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often leave his/her seat in the middle of a class or meal?</string>
+			<key>Section</key>
+			<string>Section A2b</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often run about/ climb excessively in places where it is inappropriate?( e.g. class room , running about during prayers?</string>
+			<key>Section</key>
+			<string>Section A2c</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often unable to engage in play activities quietly (e.g., playing board games, building mud houses, playing with dolls)?</string>
+			<key>Section</key>
+			<string>Section A2d</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Is your child running around most of the time, even while inside the house or in the market as if driven by a motor?</string>
+			<key>Section</key>
+			<string>Section A2e</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often talk excessively?</string>
+			<key>Section</key>
+			<string>Section A2f</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often start answering questions even before the question has been completed?</string>
+			<key>Section</key>
+			<string>Section A2g</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>While participating in group activities, is it often difficult for your child to wait for his/her turn?</string>
+			<key>Section</key>
+			<string>Section A2h</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child frequently interrupt others conversation?   (OR) Does your child frequently interrupt the games being played by other children(e.g  jumps in conversations, games or activities)?</string>
+			<key>Section</key>
+			<string>Section A2i</string>
+		</dict>
+	</array>
+	<key>ArrayQuestionsAbove13SectionA</key>
+	<array>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often overlooks and misses details?</string>
+			<key>Section</key>
+			<string>Section A1a</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string>Does your child is often inaccurate in work assigned?</string>
+			<key>Section</key>
+			<string>Section A1a</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often have difficulty focusing on lectures?</string>
+			<key>Section</key>
+			<string>Section A1b</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string>Does your child is often finds difficulty in long conversations and reading lengthy stories due to lack of concentration?</string>
+			<key>Section</key>
+			<string>Section A1b</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does you  often find ur childs mind distracted even without any distractions?</string>
+			<key>Section</key>
+			<string>Section A1c</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often starts tasks appropriately but loses focus soon or get easily sidetracked?</string>
+			<key>Section</key>
+			<string>Section A1d</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often have difficulty managing sequential tasks and/or difficulty keeping things in order?</string>
+			<key>Section</key>
+			<string>Section A1e</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string>Does your  child often fail to meet deadlines and /or has poor time management? </string>
+			<key>Section</key>
+			<string>Section A1e</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often avoid activities that require sustained mental efforts(e.g   preparing reports,completing reports, reviewing lengthy papers)?</string>
+			<key>Section</key>
+			<string>Section A1f</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often loses things necessary for tasks( e.g. keys, mobile phones,wallet, eyeglasses, tools, paperwork)?</string>
+			<key>Section</key>
+			<string>Section A1g</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often loses concentration due to unrelated thoughts and loses track of the work he/she is doing?</string>
+			<key>Section</key>
+			<string>Section A1h</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string> Is your child more forgetful in daily activities compared to other children of his/her age (e.g returning telephone calls, paying bills, keeping appointments)?</string>
+			<key>Section</key>
+			<string>Section A1i</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often appear restless(e.g twisting the body when seated, squirming)?</string>
+			<key>Section</key>
+			<string>Section A2a</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often leave his/her seat in the workplace or in other situations which require remaining in place? </string>
+			<key>Section</key>
+			<string>Section A2b</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often have feeling of restlessness?</string>
+			<key>Section</key>
+			<string>Section A2c</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often unable to engage in play activities quietly(e.g playing cards , chess, antakshari)?</string>
+			<key>Section</key>
+			<string>Section A2d</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Is your child often unable to remain still for extended time as in restaurants and/or  meetings?</string>
+			<key>Section</key>
+			<string>Section A2e</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often talk excessively?</string>
+			<key>Section</key>
+			<string>Section A2f</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often not wait for his/her turn during conversations?</string>
+			<key>Section</key>
+			<string>Section A2g</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often finds it difficult to wait in line(e.g for an interview)?</string>
+			<key>Section</key>
+			<string>Section A2h</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does your child often disturbs other people in their activities or may takeover what others are doing?</string>
+			<key>Section</key>
+			<string>Section A2i</string>
+		</dict>
+	</array>
+	<key>ArrayQuestionsAbove13SectionB</key>
+	<array>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Has the onset been before 12 years of age ?</string>
+			<key>Section</key>
+			<string>Section B1</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string>Does symptoms in your child are  present for atleast 6 months duration?</string>
+			<key>Section</key>
+			<string>Section B2</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does symptoms in your child are present atleast in 2 settings?</string>
+			<key>Section</key>
+			<string>Section B3</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Can these symptoms be explained by “Intellectual Disability”?</string>
+			<key>Section</key>
+			<string>Section B4</string>
+		</dict>
+	</array>
+	<key>ArrayQuestionsBelow13SectionB</key>
+	<array>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>b</string>
+			<key>Question</key>
+			<string>Does symptoms in your child are  present for atleast 6 months duration?</string>
+			<key>Section</key>
+			<string>Section B2</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Does symptoms in your child are present atleast in 2 settings?</string>
+			<key>Section</key>
+			<string>Section B3</string>
+		</dict>
+		<dict>
+			<key>QuestionNumber</key>
+			<string>a</string>
+			<key>Question</key>
+			<string>Can these symptoms be explained by “Intellectual Disability”?</string>
+			<key>Section</key>
+			<string>Section B4</string>
+		</dict>
+	</array>
+</dict>
+</plist>
