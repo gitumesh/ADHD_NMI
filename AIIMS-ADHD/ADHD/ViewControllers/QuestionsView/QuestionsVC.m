@@ -213,7 +213,7 @@
 
 #pragma mark - Methods Button Below
 - (void) methodBack:(id)sender{
-    [Utilities showAlertwithTitle:kAlertTitle withMessage:kAlertMessageAreYouSure withButtonTitle:@"Ok" withHandler:^(UIAlertAction *action) {
+//    [Utilities showAlertwithTitle:kAlertTitle withMessage:kAlertMessageAreYouSure withButtonTitle:@"Ok" withHandler:^(UIAlertAction *action) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.2 * NSEC_PER_SEC), dispatch_get_main_queue(),^{
             if (questionNumber > 0) {
                 questionNumber--;
@@ -223,9 +223,9 @@
             [self resetQuestionOptions];
             [self setQuestion1LabelForSection];
         });
-    } andCancelButtonTitle:@"Cancel" withHandler:^(UIAlertAction *action) {
+//    } andCancelButtonTitle:@"Cancel" withHandler:^(UIAlertAction *action) {
         
-    } withController:self];
+//    } withController:self];
 }
 
 - (void) methodReset:(id)sender{
