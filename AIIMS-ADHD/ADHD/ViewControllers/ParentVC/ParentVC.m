@@ -8,6 +8,8 @@
 
 #import "ParentVC.h"
 #import "InfoVC.h"
+#import "SupportVC.h"
+#import "MoreAppsVC.h"
 
 @interface ParentVC ()
 
@@ -66,16 +68,23 @@
 - (void) methodHome:(id)sender{
     NSLog(@"%s", __PRETTY_FUNCTION__);
     [Utilities showAlertwithTitle:kAlertTitle withMessage:kAlertGoToHome withButtonTitle:kAlertButtonOK withHandler:^(UIAlertAction *action) {
+        [self methodReset:sender];
         [self.navigationController popToRootViewControllerAnimated:true];
     } andCancelButtonTitle:kAlertButtonCancel withHandler:nil withController:self];
 }
 
 - (void) methodSupport:(id)sender{
     NSLog(@"%s", __PRETTY_FUNCTION__);
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    SupportVC *infoVC = [storyboard instantiateViewControllerWithIdentifier:@"SupportVC"];
+    [[self navigationController] pushViewController:infoVC animated:true];
 }
 
 - (void) methodOtherApps:(id)sender{
     NSLog(@"%s", __PRETTY_FUNCTION__);
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MoreAppsVC *infoVC = [storyboard instantiateViewControllerWithIdentifier:@"MoreAppsVC"];
+    [[self navigationController] pushViewController:infoVC animated:true];
 }
 
 - (void) methodInfo:(id)sender{
@@ -87,6 +96,47 @@
 
 - (void) methodReset:(id)sender{
     NSLog(@"%s", __PRETTY_FUNCTION__);
+    NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"QuestionAnswers" ofType:@"plist"]];
+    NSArray *arrayQuestionsSectionA;
+    NSArray *arrayQuestionsSectionB;
+    if ([[NSUserDefaults standardUserDefaults] integerForKey:@"age"]) {
+        NSString *selectedAge = [[NSUserDefaults standardUserDefaults] valueForKey:@"age"];
+        SelectedChildAge childAgeCal = kSelectedChildAgeNone;
+        if ([selectedAge isEqualToString:@"13"]) {
+            childAgeCal = kSelectedChildAgeAbove13;
+        }else{
+            childAgeCal = kSelectedChildAgeBelow13;
+        }
+        switch (childAgeCal) {
+            case kSelectedChildAgeBelow13:
+                arrayQuestionsSectionA = (NSArray*)[dictionary objectForKey:@"ArrayQuestionsBelow13SectionA"];
+                arrayQuestionsSectionB = (NSArray*)[dictionary objectForKey:@"ArrayQuestionsBelow13SectionB"];
+                break;
+                
+            case kSelectedChildAgeAbove13:
+                arrayQuestionsSectionA = (NSArray*)[dictionary objectForKey:@"ArrayQuestionsAbove13SectionA"];
+                arrayQuestionsSectionB = (NSArray*)[dictionary objectForKey:@"ArrayQuestionsAbove13SectionB"];
+                break;
+                
+            default:
+                break;
+        }
+        for (int i = 0; i < arrayQuestionsSectionA.count; i++) {
+            NSDictionary *dictionaryQuestion = (NSDictionary*)[arrayQuestionsSectionA objectAtIndex:i];
+            //        NSString *question = (NSString*)[dictionaryQuestion valueForKey:kKeyQuestion];
+            NSString *questionNumberString = (NSString*)[dictionaryQuestion valueForKey:kKeyQuestionNumber];
+            NSString *section = (NSString*)[dictionaryQuestion valueForKey:kKeySection];
+            [[NSUserDefaults standardUserDefaults] setValue:nil forKey:[NSString stringWithFormat:@"%@_%@",section,questionNumberString]];
+        }
+        for (int i = 0; i < arrayQuestionsSectionB.count; i++) {
+            NSDictionary *dictionaryQuestion = (NSDictionary*)[arrayQuestionsSectionB objectAtIndex:i];
+            //        NSString *question = (NSString*)[dictionaryQuestion valueForKey:kKeyQuestion];
+            NSString *questionNumberString = (NSString*)[dictionaryQuestion valueForKey:kKeyQuestionNumber];
+            NSString *section = (NSString*)[dictionaryQuestion valueForKey:kKeySection];
+            [[NSUserDefaults standardUserDefaults] setValue:nil forKey:[NSString stringWithFormat:@"%@_%@",section,questionNumberString]];
+        }
+    }
+    [[NSUserDefaults standardUserDefaults] setValue:nil forKey:@"age"];
 }
 
 

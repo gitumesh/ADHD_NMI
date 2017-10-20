@@ -162,8 +162,6 @@
 
 -(void) saveAnswerForQuestionNumber:(BOOL) answer{
     [[NSUserDefaults standardUserDefaults] setValue:[NSString stringWithFormat:@"%d",answer] forKey:[NSString stringWithFormat:@"%@_%@",stringSection,stringQuestionNumber]];
-    NSLog(@"%@_%@",stringSection,stringQuestionNumber);
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] valueForKey:[NSString stringWithFormat:@"%@_%@",stringSection,stringQuestionNumber]]);
 }
 
 -(NSString *)getAnswerForQuestionNumber:(NSString*) questionNumberString andSection:(NSString*) section {
@@ -307,7 +305,7 @@
             if (countYesInSectionB == 3) {
                 [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Move to section B for further queries." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
             }else{
-                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Completed test. No ADHD present." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
+//                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Completed test. No ADHD present." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
             }
         }
             break;
@@ -316,7 +314,7 @@
             if (countYesInSectionB == 4) {
                 [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Move to section B for further queries." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
             }else{
-                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Completed test. No ADHD present." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
+//                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Completed test. No ADHD present." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
             }
         }
             break;
@@ -326,11 +324,11 @@
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:kSequeShowResults]) {
-        //        QuestionsVC *vc = (QuestionsVC *)segue.destinationViewController;
-        //        NSLog(@"selectedChildAge = %d",selectedChildAge);
-        //        vc.selectedChildAgeForCalculation = selectedChildAge;
-    }
+//    if ([segue.identifier isEqualToString:kSequeShowResults]) {
+//                QuestionsVC *vc = (QuestionsVC *)segue.destinationViewController;
+//                NSLog(@"selectedChildAge = %d",selectedChildAge);
+//                vc.selectedChildAgeForCalculation = selectedChildAge;
+//    }
 }
 
 @end

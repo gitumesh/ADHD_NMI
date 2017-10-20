@@ -18,6 +18,9 @@
 		1847194C1E47AB05002F296E /* QuestionsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847194B1E47AB05002F296E /* QuestionsVC.m */; };
 		184719501E47ABDE002F296E /* ResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1847194F1E47ABDE002F296E /* ResultsVC.m */; };
 		897AD5F21EB6EAF700BD6709 /* InfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 897AD5F11EB6EAF700BD6709 /* InfoVC.m */; };
+		89C058061F913DB900B3F330 /* ListOfContributors.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C058051F913DB900B3F330 /* ListOfContributors.m */; };
+		89C058091F9140DC00B3F330 /* SupportVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C058081F9140DC00B3F330 /* SupportVC.m */; };
+		89C058121F91490900B3F330 /* MoreAppsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 89C058111F91490900B3F330 /* MoreAppsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,12 @@
 		184719511E47AC44002F296E /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		897AD5F01EB6EAF700BD6709 /* InfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoVC.h; sourceTree = "<group>"; };
 		897AD5F11EB6EAF700BD6709 /* InfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoVC.m; sourceTree = "<group>"; };
+		89C058041F913DB900B3F330 /* ListOfContributors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListOfContributors.h; sourceTree = "<group>"; };
+		89C058051F913DB900B3F330 /* ListOfContributors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListOfContributors.m; sourceTree = "<group>"; };
+		89C058071F9140DC00B3F330 /* SupportVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SupportVC.h; sourceTree = "<group>"; };
+		89C058081F9140DC00B3F330 /* SupportVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupportVC.m; sourceTree = "<group>"; };
+		89C058101F91490900B3F330 /* MoreAppsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreAppsVC.h; sourceTree = "<group>"; };
+		89C058111F91490900B3F330 /* MoreAppsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreAppsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +106,17 @@
 		184719361E4726F9002F296E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				89C058101F91490900B3F330 /* MoreAppsVC.h */,
+				89C058111F91490900B3F330 /* MoreAppsVC.m */,
 				897AD5EF1EB6EAF700BD6709 /* InfoVC */,
 				1847194D1E47ABCE002F296E /* ResultsVC */,
 				184719491E47AAEE002F296E /* QuestionsView */,
 				1847193B1E472718002F296E /* AgeGroup */,
 				184719371E4726F9002F296E /* ParentVC */,
+				89C058041F913DB900B3F330 /* ListOfContributors.h */,
+				89C058051F913DB900B3F330 /* ListOfContributors.m */,
+				89C058071F9140DC00B3F330 /* SupportVC.h */,
+				89C058081F9140DC00B3F330 /* SupportVC.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,7 +217,7 @@
 					181A6A941E3C9A52009560CD = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 3EKVC6ETR5;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -246,10 +261,13 @@
 				1847194C1E47AB05002F296E /* QuestionsVC.m in Sources */,
 				184719421E47275E002F296E /* AppDelegate.m in Sources */,
 				1847193A1E4726F9002F296E /* ParentVC.m in Sources */,
+				89C058091F9140DC00B3F330 /* SupportVC.m in Sources */,
 				1847193E1E472731002F296E /* AgeGroupVC.m in Sources */,
 				184719501E47ABDE002F296E /* ResultsVC.m in Sources */,
 				181A6A9A1E3C9A52009560CD /* main.m in Sources */,
 				184719481E479060002F296E /* Utilities.m in Sources */,
+				89C058121F91490900B3F330 /* MoreAppsVC.m in Sources */,
+				89C058061F913DB900B3F330 /* ListOfContributors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,16 +379,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sanjay Kapoor (3EKVC6ETR5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sanjay Kapoor (3EKVC6ETR5)";
-				DEVELOPMENT_TEAM = 3EKVC6ETR5;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ADHD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bace.adhd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dddabded-0db3-476d-afeb-2dce95b6e232";
-				PROVISIONING_PROFILE_SPECIFIER = WildCard_Dist;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -378,16 +396,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Sanjay Kapoor (3EKVC6ETR5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Sanjay Kapoor (3EKVC6ETR5)";
-				DEVELOPMENT_TEAM = 3EKVC6ETR5;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ADHD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bace.adhd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "dddabded-0db3-476d-afeb-2dce95b6e232";
-				PROVISIONING_PROFILE_SPECIFIER = WildCard_Dist;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

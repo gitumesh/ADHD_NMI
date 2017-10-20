@@ -10,6 +10,7 @@
 
 @interface AgeGroupVC ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *launchImage;
 @property (weak, nonatomic) IBOutlet UIButton *buttonChild;
 @property (weak, nonatomic) IBOutlet UIButton *buttonTeenager;
 @property (weak, nonatomic) IBOutlet UINavigationItem *navigationItem;
@@ -22,6 +23,11 @@
     [super viewDidLoad];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.5 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [_launchImage setHidden:true];
+        [self performSegueWithIdentifier:@"ListOfContributors" sender:self];
+    });
 }
 
 -(void) viewWillAppear:(BOOL)animated{
@@ -32,7 +38,6 @@
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    
 }
 
 
@@ -70,6 +75,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
         [self performSegueWithIdentifier:kSequeShowQuestionView sender:self];
     });
+    
 }
 
 -(void) resetButtons{
@@ -85,6 +91,16 @@
     if ([segue.identifier isEqualToString:kSequeShowQuestionView]) {
         QuestionsVC *vc = (QuestionsVC *)segue.destinationViewController;
         NSLog(@"selectedChildAge = %d",selectedChildAge);
+        switch (selectedChildAge) {
+            case kSelectedChildAgeAbove13:
+                [[NSUserDefaults standardUserDefaults] setValue:@"13" forKey:@"age"];
+                break;
+                
+            default:
+                [[NSUserDefaults standardUserDefaults] setValue:@"12" forKey:@"age"];
+                break;
+        }
+        
         vc.selectedChildAgeForCalculation = selectedChildAge;
     }
 }

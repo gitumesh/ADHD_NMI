@@ -17,6 +17,7 @@
     NSString *stringQuestion;
     NSString *stringQuestionNumber;
     NSString *stringSection;
+    NSString *result;
 }
 
 @property (nonatomic, assign) SelectedChildAge selectedChildAgeForCalculation;
