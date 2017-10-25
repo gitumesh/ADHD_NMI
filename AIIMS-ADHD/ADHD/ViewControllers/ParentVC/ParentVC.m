@@ -76,7 +76,7 @@
 - (void) methodSupport:(id)sender{
     NSLog(@"%s", __PRETTY_FUNCTION__);
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    SupportVC *infoVC = [storyboard instantiateViewControllerWithIdentifier:@"SupportVC"];
+    InfoVC *infoVC = [storyboard instantiateViewControllerWithIdentifier:@"InfoVC"];
     [[self navigationController] pushViewController:infoVC animated:true];
 }
 
@@ -90,7 +90,7 @@
 - (void) methodInfo:(id)sender{
     NSLog(@"%s", __PRETTY_FUNCTION__);
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    InfoVC *infoVC = [storyboard instantiateViewControllerWithIdentifier:@"InfoVC"];
+    SupportVC *infoVC = [storyboard instantiateViewControllerWithIdentifier:@"SupportVC"];
     [[self navigationController] pushViewController:infoVC animated:true];
 }
 

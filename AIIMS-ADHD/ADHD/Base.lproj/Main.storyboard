@@ -218,10 +218,10 @@
             </objects>
             <point key="canvasLocation" x="2273" y="905"/>
         </scene>
-        <!--Information-->
+        <!--Support-->
         <scene sceneID="eNl-dS-Hb5">
             <objects>
-                <viewController storyboardIdentifier="InfoVC" title="Information" id="sdb-AM-K7a" customClass="InfoVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoVC" title="Support" id="sdb-AM-K7a" customClass="InfoVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="b6X-PS-Mgj"/>
                         <viewControllerLayoutGuide type="bottom" id="cgT-d0-PjK"/>
@@ -402,6 +402,9 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
                             <constraint firstAttribute="trailing" secondItem="Ph8-IT-qHV" secondAttribute="trailing" constant="8" id="gjw-U7-c8c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Ph8-IT-qHV" id="XVg-Uw-hM5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wAa-hb-xsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -494,7 +497,7 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
             </objects>
             <point key="canvasLocation" x="1076" y="997"/>
         </scene>
-        <!--Support-->
+        <!--Information-->
         <scene sceneID="2oP-DX-fRm">
             <objects>
                 <viewController storyboardIdentifier="SupportVC" id="BaR-oX-ZgL" customClass="SupportVC" sceneMemberID="viewController">
@@ -506,33 +509,93 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhb-px-qRx">
-                                <rect key="frame" x="16" y="80" width="343" height="385.5"/>
-                                <mutableString key="text">-&gt; AIIMS modification of INDT-ADHD tool was developed and validated by Child Neurology Division, Department of Pediatrics, ALL India Institute of Medical Sciences, New Delhi. -&gt; The original tool developed by INCLEN-NDD project Investigators: NK Arora (Project Leader), MKC Nair (Principal Investigator), Jennifer Pinto-Martin (Co-PI), Donald Silberberg (Co-PI), Sheffali Gulati (Network Coordinator) and Inclen Study Group -&gt; Original tool was published in Indian Pediatrics and is available online at: http://www.indianpediatrics.net/june2014/june-457-462.htm [Indian Pediatr 2014;51: 457-462]-&gt; This tool has been modified as per the current DSM-5 criteria</mutableString>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Selection-Unselected" translatesAutoresizingMaskIntoConstraints="NO" id="4nD-ro-gRl">
+                                <rect key="frame" x="16" y="72" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Lzg-eW-1He"/>
+                                    <constraint firstAttribute="width" secondItem="4nD-ro-gRl" secondAttribute="height" id="MaZ-Bt-aS6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mj4-sy-XuT">
+                                <rect key="frame" x="59" y="72" width="300" height="101.5"/>
+                                <string key="text">AIIMS modification of INDT-ADHD tool was developed and validated by Child Neurology Division, Department of Pediatrics, ALL India Institute of Medical Sciences, New Delhi.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Selection-Unselected" translatesAutoresizingMaskIntoConstraints="NO" id="DZc-h8-cl2">
+                                <rect key="frame" x="16" y="181.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Qde-zu-yt8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Selection-Unselected" translatesAutoresizingMaskIntoConstraints="NO" id="T1o-wN-6Ay">
+                                <rect key="frame" x="16" y="332" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="ehS-qQ-AaW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVZ-Eg-lOs">
+                                <rect key="frame" x="59" y="181.5" width="300" height="142.5"/>
+                                <string key="text">The original tool developed by INCLEN-NDD project Investigators: NK Arora (Project Leader), MKC Nair (Principal Investigator), Jennifer Pinto-Martin (Co-PI), Donald Silberberg (Co-PI), Sheffali Gulati (Network Coordinator) and Inclen Study Group.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lZ-mV-o0e">
+                                <rect key="frame" x="59" y="332" width="300" height="101.5"/>
+                                <string key="text">Original tool was published in Indian Pediatrics and is available online at: http://www.indianpediatrics.net/june2014/june-457-462.htm [Indian Pediatr 2014;51: 457-462]</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Selection-Unselected" translatesAutoresizingMaskIntoConstraints="NO" id="URd-I3-NaJ">
+                                <rect key="frame" x="16" y="441" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="jmc-tk-PWs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This tool has been modified as per the current DSM-5 criteria." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edx-RU-vxI">
+                                <rect key="frame" x="59" y="441" width="300" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Hhb-px-qRx" secondAttribute="trailing" constant="16" id="RCo-Wv-tTz"/>
-                            <constraint firstItem="Hhb-px-qRx" firstAttribute="leading" secondItem="IbU-zp-Lm4" secondAttribute="leading" constant="16" id="TFf-ox-7hj"/>
-                            <constraint firstItem="Hhb-px-qRx" firstAttribute="top" secondItem="BNU-bw-XpT" secondAttribute="bottom" constant="16" id="ZAF-sW-UEM"/>
+                            <constraint firstItem="bVZ-Eg-lOs" firstAttribute="leading" secondItem="Mj4-sy-XuT" secondAttribute="trailing" constant="-300" id="1SQ-nU-eWr"/>
+                            <constraint firstAttribute="trailing" secondItem="Mj4-sy-XuT" secondAttribute="trailing" constant="16" id="E6S-fT-1mI"/>
+                            <constraint firstItem="1lZ-mV-o0e" firstAttribute="leading" secondItem="bVZ-Eg-lOs" secondAttribute="leading" id="EgR-gS-cfU"/>
+                            <constraint firstItem="Mj4-sy-XuT" firstAttribute="top" secondItem="4nD-ro-gRl" secondAttribute="top" id="FRW-4H-KNn"/>
+                            <constraint firstItem="4nD-ro-gRl" firstAttribute="top" secondItem="BNU-bw-XpT" secondAttribute="bottom" constant="8" id="H1j-dX-IsZ"/>
+                            <constraint firstItem="DZc-h8-cl2" firstAttribute="leading" secondItem="4nD-ro-gRl" secondAttribute="leading" id="JX5-CJ-zyy"/>
+                            <constraint firstItem="T1o-wN-6Ay" firstAttribute="leading" secondItem="DZc-h8-cl2" secondAttribute="leading" id="Kuu-TR-wxI"/>
+                            <constraint firstItem="edx-RU-vxI" firstAttribute="leading" secondItem="1lZ-mV-o0e" secondAttribute="leading" id="M9u-Lb-FrC"/>
+                            <constraint firstItem="4nD-ro-gRl" firstAttribute="leading" secondItem="IbU-zp-Lm4" secondAttribute="leading" constant="16" id="PQ1-sR-K3r"/>
+                            <constraint firstItem="T1o-wN-6Ay" firstAttribute="width" secondItem="T1o-wN-6Ay" secondAttribute="height" id="Qbj-wZ-tMm"/>
+                            <constraint firstAttribute="trailing" secondItem="1lZ-mV-o0e" secondAttribute="trailing" constant="16" id="SPD-pa-iI7"/>
+                            <constraint firstItem="Mj4-sy-XuT" firstAttribute="width" secondItem="IbU-zp-Lm4" secondAttribute="width" multiplier="0.8" id="TrK-XY-Hld"/>
+                            <constraint firstItem="DZc-h8-cl2" firstAttribute="width" secondItem="DZc-h8-cl2" secondAttribute="height" id="UUy-0a-JcV"/>
+                            <constraint firstItem="Mj4-sy-XuT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4nD-ro-gRl" secondAttribute="trailing" constant="8" symbolic="YES" id="Vgv-WF-7FE"/>
+                            <constraint firstItem="bVZ-Eg-lOs" firstAttribute="top" secondItem="DZc-h8-cl2" secondAttribute="top" id="aS4-n1-kBD"/>
+                            <constraint firstItem="URd-I3-NaJ" firstAttribute="leading" secondItem="T1o-wN-6Ay" secondAttribute="leading" id="dFM-YH-17K"/>
+                            <constraint firstItem="T1o-wN-6Ay" firstAttribute="top" secondItem="bVZ-Eg-lOs" secondAttribute="bottom" constant="8" id="htQ-1h-Ppc"/>
+                            <constraint firstAttribute="trailing" secondItem="bVZ-Eg-lOs" secondAttribute="trailing" constant="16" id="n2P-CC-Yoo"/>
+                            <constraint firstItem="DZc-h8-cl2" firstAttribute="top" secondItem="Mj4-sy-XuT" secondAttribute="bottom" constant="8" id="nrM-i7-7zh"/>
+                            <constraint firstItem="URd-I3-NaJ" firstAttribute="top" secondItem="1lZ-mV-o0e" secondAttribute="bottom" constant="8" id="ufz-Ij-Cu5"/>
+                            <constraint firstItem="1lZ-mV-o0e" firstAttribute="top" secondItem="T1o-wN-6Ay" secondAttribute="top" id="w1s-mp-i3g"/>
+                            <constraint firstItem="URd-I3-NaJ" firstAttribute="width" secondItem="URd-I3-NaJ" secondAttribute="height" id="wfV-Yl-6IN"/>
+                            <constraint firstItem="edx-RU-vxI" firstAttribute="trailing" secondItem="1lZ-mV-o0e" secondAttribute="trailing" id="ySL-DJ-3hc"/>
+                            <constraint firstItem="edx-RU-vxI" firstAttribute="top" secondItem="URd-I3-NaJ" secondAttribute="top" id="ySi-Ug-1cX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Support" id="X7k-4c-TaU"/>
+                    <navigationItem key="navigationItem" title="Information" id="X7k-4c-TaU"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaP-gG-KB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3833" y="904"/>
+            <point key="canvasLocation" x="3832.8000000000002" y="903.59820089955031"/>
         </scene>
         <!--More Applications-->
         <scene sceneID="C0l-Ww-bkr">

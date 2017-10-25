@@ -7,6 +7,7 @@
 //
 
 #import "QuestionsVC.h"
+#import "ResultsVC.h"
 
 @interface QuestionsVC ()
 
@@ -37,6 +38,7 @@
     [self setTitle:@"Question"];
     _sectionQuestion = kSectionQuestionA;
     [self readDataFromPlistAndCreateQuestionsAnswers];
+    self.navigationItem.hidesBackButton = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -243,9 +245,9 @@
 
 -(void) completionOfSectionA{
     NSLog(@"Section A completed");
-    int countYesInSectionA = 0;
-    int countYesInSectionA1 = 0;
-    int countYesInSectionA2 = 0;
+    countYesInSectionA = 0;
+    countYesInSectionA1 = 0;
+    countYesInSectionA2 = 0;
     for (int i = 0; i < arrayQuestionsSectionA.count; i++) {
         NSDictionary *dictionaryQuestion = (NSDictionary*)[arrayQuestionsSectionA objectAtIndex:i];
         NSString *questionNumberString = (NSString*)[dictionaryQuestion valueForKey:kKeyQuestionNumber];
@@ -302,33 +304,36 @@
     switch (_selectedChildAgeForCalculation) {
         case kSelectedChildAgeBelow13:
         {
-            if (countYesInSectionB == 3) {
-                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Move to section B for further queries." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
-            }else{
-//                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Completed test. No ADHD present." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
+            if (countYesInSectionB == 3) { //ADHD present
+                result = @"ADHD is present. Tap to return";
+            }else{//ADHD absent
+                result = @"No Adhd present. Tap to return";
             }
         }
             break;
             
         default:{
-            if (countYesInSectionB == 4) {
-                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Move to section B for further queries." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
-            }else{
-//                [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Completed test. No ADHD present." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
+            if (countYesInSectionB == 4) { // ADHD present
+                result = @"ADHD is present. Tap to return";
+            }else{//ADHD absent
+                result = @"No Adhd present. Tap to return";
             }
         }
             break;
     }
 }
 
+-(void) calculateADHD{
+    
+}
+
 #pragma mark - Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-//    if ([segue.identifier isEqualToString:kSequeShowResults]) {
-//                QuestionsVC *vc = (QuestionsVC *)segue.destinationViewController;
-//                NSLog(@"selectedChildAge = %d",selectedChildAge);
-//                vc.selectedChildAgeForCalculation = selectedChildAge;
-//    }
+    if ([segue.identifier isEqualToString:kSequeShowResults]) {
+        ResultsVC *vc = (ResultsVC *)segue.destinationViewController;
+        vc.resultLabel.text = result;
+    }
 }
 
 @end

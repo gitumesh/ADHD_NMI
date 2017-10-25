@@ -18,6 +18,10 @@
     NSString *stringQuestionNumber;
     NSString *stringSection;
     NSString *result;
+    
+    int countYesInSectionA;
+    int countYesInSectionA1;
+    int countYesInSectionA2;
 }
 
 @property (nonatomic, assign) SelectedChildAge selectedChildAgeForCalculation;
