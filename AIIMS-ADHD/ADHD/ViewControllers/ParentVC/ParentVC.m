@@ -68,8 +68,11 @@
 - (void) methodHome:(id)sender{
     NSLog(@"%s", __PRETTY_FUNCTION__);
     [Utilities showAlertwithTitle:kAlertTitle withMessage:kAlertGoToHome withButtonTitle:kAlertButtonOK withHandler:^(UIAlertAction *action) {
+        [self dismissViewControllerAnimated:false completion:nil];
         [self methodReset:sender];
-        [self.navigationController popToRootViewControllerAnimated:true];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.navigationController popToRootViewControllerAnimated:true];
+        });
     } andCancelButtonTitle:kAlertButtonCancel withHandler:nil withController:self];
 }
 

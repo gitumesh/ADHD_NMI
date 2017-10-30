@@ -21,7 +21,7 @@ typedef enum SectionQuestion{
 }SectionQuestion;
 
 #define kSequeShowQuestionView          @"showQuestionView"
-#define kSequeShowResults               @"showResults"
+#define kSequeShowResults               @"Result"
 #define kAlertTitle                     @"Alert!"
 #define kAlertButtonOK                  @"Ok"
 #define kAlertButtonCancel              @"Cancel"

@@ -228,6 +228,15 @@
 //    } withController:self];
 }
 
+- (void) methodHome:(id)sender{
+    [Utilities showAlertwithTitle:kAlertTitle withMessage:kAlertMessageAreYouSure withButtonTitle:@"Ok" withHandler:^(UIAlertAction *action) {
+        [super methodReset:sender];
+        [self.navigationController popToRootViewControllerAnimated:true];
+    } andCancelButtonTitle:@"Cancel" withHandler:^(UIAlertAction *action) {
+        
+    } withController:self];
+}
+
 - (void) methodReset:(id)sender{
     [Utilities showAlertwithTitle:kAlertTitle withMessage:kAlertMessageAreYouSure withButtonTitle:@"Ok" withHandler:^(UIAlertAction *action) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.2 * NSEC_PER_SEC), dispatch_get_main_queue(),^{
@@ -275,7 +284,9 @@
         }
     }
     if (countYesInSectionA >= 12) {
-        [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Severe symptoms as per Conners Rating scale for ADHD." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
+//        [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Severe symptoms as per Conners Rating scale for ADHD." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
+        result = @"Severe symptoms as per Conners Rating scale for ADHD. Tap to return";
+        [self performSegueWithIdentifier:@"Result" sender:self];
     }else{
         if (countYesInSectionA1 >= 6 || countYesInSectionA2 >= 6) {
             _sectionQuestion = kSectionQuestionB;
@@ -321,10 +332,7 @@
         }
             break;
     }
-}
-
--(void) calculateADHD{
-    
+    [self performSegueWithIdentifier:@"Result" sender:self];
 }
 
 #pragma mark - Navigation

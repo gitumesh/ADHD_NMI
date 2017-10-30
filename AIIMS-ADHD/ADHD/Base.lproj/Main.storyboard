@@ -189,7 +189,7 @@
                         <outlet property="labelQuestion1No" destination="L5N-oj-l0Y" id="fGk-Jq-SJa"/>
                         <outlet property="labelQuestion1Numbering" destination="uZ1-6h-bUr" id="CUg-kR-GXL"/>
                         <outlet property="labelQuestion1Yes" destination="QtD-4t-mxv" id="9Ed-DE-oyu"/>
-                        <segue destination="rze-45-i2r" kind="show" identifier="showResults" id="2FA-6J-tYY"/>
+                        <segue destination="rze-45-i2r" kind="show" identifier="Result" id="2FA-6J-tYY"/>
                         <segue destination="TGZ-5B-730" kind="show" id="yAM-c2-6W2"/>
                     </connections>
                 </viewController>
@@ -211,7 +211,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="rze-45-i2r" kind="show" id="awn-4c-dtJ"/>
+                        <segue destination="rze-45-i2r" kind="show" identifier="Result" id="awn-4c-dtJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGw-6K-Z0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -428,7 +428,7 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
             </objects>
             <point key="canvasLocation" x="292" y="137"/>
         </scene>
-        <!--Neuromotor Impairment Tool-->
+        <!--ADHD-->
         <scene sceneID="MhC-Kq-KHJ">
             <objects>
                 <viewController storyboardIdentifier="ListOfContributors" id="BSl-Fy-qdr" customClass="ListOfContributors" sceneMemberID="viewController">
@@ -491,7 +491,7 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
                             <constraint firstItem="TID-By-8dU" firstAttribute="leading" secondItem="bx4-xd-RNt" secondAttribute="leading" constant="8" id="zw4-py-JV1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Neuromotor Impairment Tool" id="060-KN-uie"/>
+                    <navigationItem key="navigationItem" title="ADHD" id="060-KN-uie"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EXO-2g-vwt" sceneMemberID="firstResponder"/>
             </objects>
@@ -564,7 +564,7 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bVZ-Eg-lOs" firstAttribute="leading" secondItem="Mj4-sy-XuT" secondAttribute="trailing" constant="-300" id="1SQ-nU-eWr"/>
+                            <constraint firstItem="1lZ-mV-o0e" firstAttribute="leading" secondItem="T1o-wN-6Ay" secondAttribute="trailing" constant="23" id="54g-cL-Q2h"/>
                             <constraint firstAttribute="trailing" secondItem="Mj4-sy-XuT" secondAttribute="trailing" constant="16" id="E6S-fT-1mI"/>
                             <constraint firstItem="1lZ-mV-o0e" firstAttribute="leading" secondItem="bVZ-Eg-lOs" secondAttribute="leading" id="EgR-gS-cfU"/>
                             <constraint firstItem="Mj4-sy-XuT" firstAttribute="top" secondItem="4nD-ro-gRl" secondAttribute="top" id="FRW-4H-KNn"/>
@@ -581,8 +581,10 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
                             <constraint firstItem="bVZ-Eg-lOs" firstAttribute="top" secondItem="DZc-h8-cl2" secondAttribute="top" id="aS4-n1-kBD"/>
                             <constraint firstItem="URd-I3-NaJ" firstAttribute="leading" secondItem="T1o-wN-6Ay" secondAttribute="leading" id="dFM-YH-17K"/>
                             <constraint firstItem="T1o-wN-6Ay" firstAttribute="top" secondItem="bVZ-Eg-lOs" secondAttribute="bottom" constant="8" id="htQ-1h-Ppc"/>
+                            <constraint firstItem="bVZ-Eg-lOs" firstAttribute="leading" secondItem="DZc-h8-cl2" secondAttribute="trailing" constant="23" id="k2B-hG-LZu"/>
                             <constraint firstAttribute="trailing" secondItem="bVZ-Eg-lOs" secondAttribute="trailing" constant="16" id="n2P-CC-Yoo"/>
                             <constraint firstItem="DZc-h8-cl2" firstAttribute="top" secondItem="Mj4-sy-XuT" secondAttribute="bottom" constant="8" id="nrM-i7-7zh"/>
+                            <constraint firstItem="edx-RU-vxI" firstAttribute="leading" secondItem="URd-I3-NaJ" secondAttribute="trailing" constant="23" id="nyE-US-Icw"/>
                             <constraint firstItem="URd-I3-NaJ" firstAttribute="top" secondItem="1lZ-mV-o0e" secondAttribute="bottom" constant="8" id="ufz-Ij-Cu5"/>
                             <constraint firstItem="1lZ-mV-o0e" firstAttribute="top" secondItem="T1o-wN-6Ay" secondAttribute="top" id="w1s-mp-i3g"/>
                             <constraint firstItem="URd-I3-NaJ" firstAttribute="width" secondItem="URd-I3-NaJ" secondAttribute="height" id="wfV-Yl-6IN"/>
@@ -671,6 +673,6 @@ Chief, Child Neurology Division, Department of Pediatrics, AIIMS, New Delhi.</st
         <image name="Selection-Unselected" width="34" height="34"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="awn-4c-dtJ"/>
+        <segue reference="2FA-6J-tYY"/>
     </inferredMetricsTieBreakers>
 </document>
