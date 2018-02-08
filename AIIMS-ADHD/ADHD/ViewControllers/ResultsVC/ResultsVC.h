@@ -9,6 +9,8 @@
 #import "ParentVC.h"
 
 @interface ResultsVC : ParentVC
+
+@property (weak, nonatomic) NSString *result;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
 @end

@@ -284,7 +284,6 @@
         }
     }
     if (countYesInSectionA >= 12) {
-//        [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Severe symptoms as per Conners Rating scale for ADHD." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
         result = @"Severe symptoms as per Conners Rating scale for ADHD. Tap to return";
         [self performSegueWithIdentifier:@"Result" sender:self];
     }else{
@@ -293,7 +292,8 @@
             [self setQuestion1LabelForSection];
             [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Move to section B for further queries." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
         }else{
-            [Utilities showAlertwithTitle:kAlertTitle withMessage:@"Completed test. No ADHD present." withButtonTitle:@"OK" withHandler:nil andCancelButtonTitle:nil withHandler:nil withController:self];
+                result = @"No Adhd present. Tap to return";
+                [self performSegueWithIdentifier:@"Result" sender:self];
         }
         
     }
@@ -311,6 +311,7 @@
         }else if (i == arrayQuestionsSectionB.count - 1 && !answerValue){
             countYesInSectionB += 1;
         }
+        NSLog(@"countYesInSectionB = %d",countYesInSectionB);
     }
     switch (_selectedChildAgeForCalculation) {
         case kSelectedChildAgeBelow13:
@@ -340,7 +341,8 @@
 {
     if ([segue.identifier isEqualToString:kSequeShowResults]) {
         ResultsVC *vc = (ResultsVC *)segue.destinationViewController;
-        vc.resultLabel.text = result;
+        NSLog(@"result = %@",result);
+        vc.result = result;
     }
 }
 
